@@ -1,0 +1,140 @@
+* {
+  font-family: "inconsolata", monospace;
+}
+body {
+  padding: 0px;
+  margin: 0;
+}
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "header  header"
+    "nav  quote"
+    "nav  contents"
+    "nav  linkbio"
+    "footer  footer";
+  grid-template-columns: minmax(100px, 250px) auto;
+  grid-template-rows: auto minmax(60px, auto) auto 120px 250px;
+}
+.header {
+  grid-area: header;
+  padding: 20px 40px;
+}
+
+.buttonHex {
+  font-size: 13px;
+}
+
+.quote {
+  grid-area: quote;
+  background-color: black;
+  color: white;
+  padding: 5px 5px 10px 5px;
+}
+.color-quote {
+  text-align: center;
+}
+
+.navigations {
+  grid-area: nav;
+  background-color: black;
+  display: grid;
+  grid-template-areas:
+    "anal"
+    "monochrome"
+    "triad"
+    "split";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.anal {
+  grid-area: anal;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.monochrome {
+  grid-area: monochrome;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.triad {
+  grid-area: triad;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.split {
+  grid-area: split;
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contents {
+  grid-area: contents;
+  display: grid;
+  grid-template-areas:
+    "comp anal"
+    "tetrad  monochrome"
+    "triad  split";
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 30px;
+}
+.compDesc {
+  grid-area: comp;
+  padding: 10px;
+  background-color: #fff;
+}
+.analDesc {
+  grid-area: anal;
+  padding: 10px;
+
+  background-color: #fff;
+}
+.tetradDesc {
+  grid-area: tetrad;
+  padding: 10px;
+
+  background-color: #fff;
+}
+.monochromeDesc {
+  grid-area: monochrome;
+  padding: 10px;
+
+  background-color: #fff;
+}
+.triadDesc {
+  grid-area: triad;
+  padding: 10px;
+
+  background-color: #fff;
+}
+.splitDesc {
+  grid-area: split;
+  padding: 10px;
+
+  background-color: #fff;
+}
+.wheel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 15px;
+}
+.linkbio {
+  grid-area: linkbio;
+  background-color: black;
+}
+.footer {
+  grid-area: footer;
+  background-color: darkgray;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+}
